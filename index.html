@@ -161,15 +161,20 @@
         <div class="square" style='background-color: rgb(0, 0, 119); display: inline-block;'>
         </div><span style="display: inline-block; margin-left: 5px;">都市高速道路</span><br>
         <div class="square" style='background-color: rgb(255, 7, 7); display: inline-block;'>
-        </div><span style="display: inline-block; margin-left: 5px;">一般国道</span><br>
+        </div><span style="display: inline-block; margin-left: 5px;">一般国道 直轄</span><br>
+        <div class="square" style='background-color: rgb(255, 0, 255); display: inline-block;'>
+        </div><span style="display: inline-block; margin-left: 5px;">一般国道 補助国</span><br>
         <div class="square" style='background-color: rgb(0, 116, 0); display: inline-block;'>
         </div><span style="display: inline-block; margin-left: 5px;">主要地方道（都道府県道・指定市市道）</span><br>
         <div class="square" style='background-color: rgb(116, 0, 0); display: inline-block;'>
         </div><span style="display: inline-block; margin-left: 5px;">一般都道府県道・指定市の一般市道</span><br>
         <p>※図中の台数は
             24時間交通量<br>(全車上下計)</p>
-        <div><span
-                style='background-color: rgb(255, 0, 255)'></span>主要渋滞箇所<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R3.9時点)
+        <div>
+            <span
+                style='background-color: rgb(255, 0, 255); border: 1.5px solid black; display: inline-block; width: 10px; height: 10px; border-radius: 50%;'></span>
+            主要渋滞箇所<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R3.9時点)
         </div>
         <div class="square2" style='background-color: rgba(255, 0, 255, 0.1);display: inline-block;'></div>
         <span style="display: inline-block; margin-left: 5px;">人口集中地区（2020年）</span>
@@ -192,8 +197,11 @@
         </div><span style="display: inline-block; margin-left: 5px;">補完値</span><br>-->
         <p>※上り・下りで<br>
             速度の低いほうを表示</p>
-        <div><span
-                style='background-color: rgb(255, 0, 255)'></span>主要渋滞箇所<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R3.9時点)
+        <div>
+            <span
+                style='background-color: rgb(255, 0, 255); border: 1.5px solid black; display: inline-block; width: 10px; height: 10px; border-radius: 50%;'></span>
+            主要渋滞箇所<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R3.9時点)
         </div>
         <div class="square2" style='background-color: rgba(255, 0, 255, 0.1);display: inline-block;'></div>
         <span style="display: inline-block; margin-left: 5px;">人口集中地区（2020年）</span>
@@ -216,8 +224,11 @@
         </div><span style="display: inline-block; margin-left: 5px;">補完値</span><br>-->
         <p>※上り・下りで<br>
             速度の低いほうを表示</p>
-        <div><span
-                style='background-color: rgb(255, 0, 255)'></span>主要渋滞箇所<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R3.9時点)
+        <div>
+            <span
+                style='background-color: rgb(255, 0, 255); border: 1.5px solid black; display: inline-block; width: 10px; height: 10px; border-radius: 50%;'></span>
+            主要渋滞箇所<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R3.9時点)
         </div>
         <div class="square2" style='background-color: rgba(255, 0, 255, 0.1);display: inline-block;'></div>
         <span style="display: inline-block; margin-left: 5px;">人口集中地区（2020年）</span>
@@ -234,8 +245,11 @@
         </div><span style="display: inline-block; margin-left: 5px;">1.75以上</span><br>
         <p>※図中の台数は<br>
             昼間12時間交通量<br>(全車上下計)</p>
-        <div><span
-                style='background-color: rgb(255, 0, 255)'></span>主要渋滞箇所<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R3.9時点)
+        <div>
+            <span
+                style='background-color: rgb(255, 0, 255); border: 1.5px solid black; display: inline-block; width: 10px; height: 10px; border-radius: 50%;'></span>
+            主要渋滞箇所<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R3.9時点)
         </div>
         <div class="square2" style='background-color: rgba(255, 0, 255, 0.1);display: inline-block;'></div>
         <span style="display: inline-block; margin-left: 5px;">人口集中地区（2020年）</span>
@@ -254,8 +268,11 @@
         </div><span style="display: inline-block; margin-left: 5px;">推定値</span><br>-->
         <p>※図中の台数は<br>
             昼間12時間交通量<br>(大型車上下計)</p>
-        <div><span
-                style='background-color: rgb(255, 0, 255)'></span>主要渋滞箇所<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R3.9時点)
+        <div>
+            <span
+                style='background-color: rgb(255, 0, 255); border: 1.5px solid black; display: inline-block; width: 10px; height: 10px; border-radius: 50%;'></span>
+            主要渋滞箇所<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R3.9時点)
         </div>
         <div class="square2" style='background-color: rgba(255, 0, 255, 0.1);display: inline-block;'></div>
         <span style="display: inline-block; margin-left: 5px;">人口集中地区（2020年）</span>
@@ -478,16 +495,24 @@
                         16  // 80000 以上
                     ],
                     'line-color': [
-                        'match',
-                        ['get', '道路種別'],
-                        '1', 'rgba(0,0,255)',
-                        '2', 'rgba(0,0,119)',
-                        '3', 'rgba(255,7,7)',
-                        '4', 'rgba(0,116,0)',
-                        '5', 'rgba(0,116,0)',
-                        '6', 'rgba(116,0,0)',
-                        '7', 'rgba(116,0,0)',
-                        'rgba(0,0,0)' // default color
+                        'case',
+                        ['all',
+                            ['==', ['get', '道路種別'], '3'],
+                            ['!=', ['get', '管理区分'], '1']
+                        ],
+                        'rgba(255,0,255)',  // color if condition is true
+                        [
+                            'match',
+                            ['get', '道路種別'],
+                            '1', 'rgba(0,0,255)',
+                            '2', 'rgba(0,0,119)',
+                            '3', 'rgba(255,7,7)',
+                            '4', 'rgba(0,116,0)',
+                            '5', 'rgba(0,116,0)',
+                            '6', 'rgba(116,0,0)',
+                            '7', 'rgba(116,0,0)',
+                            'rgba(0,0,0)'  // default color
+                        ]
                     ],
                     // 'line-color': 'rgba(0, 127, 255, 1)',
                     // 'line-blur': 3,
@@ -565,16 +590,24 @@
                         16  // 80000 以上
                     ],
                     'line-color': [
-                        'match',
-                        ['get', '道路種別'],
-                        '1', 'rgba(0,0,255)',
-                        '2', 'rgba(0,0,119)',
-                        '3', 'rgba(255,7,7)',
-                        '4', 'rgba(0,116,0)',
-                        '5', 'rgba(0,116,0)',
-                        '6', 'rgba(116,0,0)',
-                        '7', 'rgba(116,0,0)',
-                        'rgba(0,0,0)' // default color
+                        'case',
+                        ['all',
+                            ['==', ['get', '道路種別'], '3'],
+                            ['!=', ['get', '管理区分'], '1']
+                        ],
+                        'rgba(255,0,255)',  // color if condition is true
+                        [
+                            'match',
+                            ['get', '道路種別'],
+                            '1', 'rgba(0,0,255)',
+                            '2', 'rgba(0,0,119)',
+                            '3', 'rgba(255,7,7)',
+                            '4', 'rgba(0,116,0)',
+                            '5', 'rgba(0,116,0)',
+                            '6', 'rgba(116,0,0)',
+                            '7', 'rgba(116,0,0)',
+                            'rgba(0,0,0)'  // default color
+                        ]
                     ],
                     // 'line-color': 'rgba(0, 0, 203, 1)',
                     // 'line-blur': 3,
@@ -636,9 +669,9 @@
                 minzoom: 14,
                 maxzoom: 23,
                 paint: {
-                    'circle-color': 'rgba(255, 255, 255, 1)',
+                    'circle-color': 'rgba(0, 0, 0, 1)',
                     // 'circle-blur': 1,
-                    'circle-radius': 7
+                    'circle-radius': 6.5
                 }
             });
 
@@ -651,7 +684,7 @@
                 maxzoom: 23,
                 paint: {
                     'circle-color': 'rgba(255, 0, 255, 1)',
-                    'circle-radius': 6
+                    'circle-radius': 5
                 }
             });
 
@@ -1728,16 +1761,24 @@
                             16  // 80000 以上
                         ],
                         'line-color': [
-                            'match',
-                            ['get', '道路種別'],
-                            '1', 'rgba(0,0,255)',
-                            '2', 'rgba(0,0,119)',
-                            '3', 'rgba(255,7,7)',
-                            '4', 'rgba(0,116,0)',
-                            '5', 'rgba(0,116,0)',
-                            '6', 'rgba(116,0,0)',
-                            '7', 'rgba(116,0,0)',
-                            'rgba(0,0,0)' // default color
+                            'case',
+                            ['all',
+                                ['==', ['get', '道路種別'], '3'],
+                                ['!=', ['get', '管理区分'], '1']
+                            ],
+                            'rgba(255,0,255)',  // color if condition is true
+                            [
+                                'match',
+                                ['get', '道路種別'],
+                                '1', 'rgba(0,0,255)',
+                                '2', 'rgba(0,0,119)',
+                                '3', 'rgba(255,7,7)',
+                                '4', 'rgba(0,116,0)',
+                                '5', 'rgba(0,116,0)',
+                                '6', 'rgba(116,0,0)',
+                                '7', 'rgba(116,0,0)',
+                                'rgba(0,0,0)'  // default color
+                            ]
                         ],
                         // 'line-color': 'rgba(0, 127, 255, 1)',
                         // 'line-blur': 3,
@@ -1815,16 +1856,24 @@
                             16  // 80000 以上
                         ],
                         'line-color': [
-                            'match',
-                            ['get', '道路種別'],
-                            '1', 'rgba(0,0,255)',
-                            '2', 'rgba(0,0,119)',
-                            '3', 'rgba(255,7,7)',
-                            '4', 'rgba(0,116,0)',
-                            '5', 'rgba(0,116,0)',
-                            '6', 'rgba(116,0,0)',
-                            '7', 'rgba(116,0,0)',
-                            'rgba(0,0,0)' // default color
+                            'case',
+                            ['all',
+                                ['==', ['get', '道路種別'], '3'],
+                                ['!=', ['get', '管理区分'], '1']
+                            ],
+                            'rgba(255,0,255)',  // color if condition is true
+                            [
+                                'match',
+                                ['get', '道路種別'],
+                                '1', 'rgba(0,0,255)',
+                                '2', 'rgba(0,0,119)',
+                                '3', 'rgba(255,7,7)',
+                                '4', 'rgba(0,116,0)',
+                                '5', 'rgba(0,116,0)',
+                                '6', 'rgba(116,0,0)',
+                                '7', 'rgba(116,0,0)',
+                                'rgba(0,0,0)'  // default color
+                            ]
                         ],
                         // 'line-color': 'rgba(0, 0, 203, 1)',
                         // 'line-blur': 3,
@@ -1880,9 +1929,9 @@
                 minzoom: 14,
                 maxzoom: 23,
                 paint: {
-                    'circle-color': 'rgba(255, 255, 255, 1)',
+                    'circle-color': 'rgba(0, 0, 0, 1)',
                     // 'circle-blur': 1,
-                    'circle-radius': 7
+                    'circle-radius': 6.5
                 }
             });
 
@@ -1895,7 +1944,7 @@
                 maxzoom: 23,
                 paint: {
                     'circle-color': 'rgba(255, 0, 255, 1)',
-                    'circle-radius': 6
+                    'circle-radius': 5
                 }
             });
 
