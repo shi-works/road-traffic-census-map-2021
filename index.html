@@ -130,8 +130,8 @@
         }
 
         .square2 {
-            width: 10px;
-            height: 10px;
+            width: 15px;
+            height: 15px;
         }
     </style>
 </head>
@@ -156,14 +156,20 @@
     </div>
     <div id='legend-24jikankotsuryo' style="display:block;" class='legend'>
         <p><b>２４時間交通量(全車上下計)</b></p>
-        <div class="square" style='background-color: rgb(0, 0, 203); display: inline-block;'>
-        </div><span style="display: inline-block; margin-left: 5px;">高速道路</span><br>
-        <div class="square" style='background-color: rgb(0, 127, 255); display: inline-block;'>
-        </div><span style="display: inline-block; margin-left: 5px;">高速道路以外</span><br>
+        <div class="square" style='background-color: rgb(0, 0, 255); display: inline-block;'>
+        </div><span style="display: inline-block; margin-left: 5px;">高速自動車国道</span><br>
+        <div class="square" style='background-color: rgb(0, 0, 119); display: inline-block;'>
+        </div><span style="display: inline-block; margin-left: 5px;">都市高速道路</span><br>
+        <div class="square" style='background-color: rgb(255, 7, 7); display: inline-block;'>
+        </div><span style="display: inline-block; margin-left: 5px;">一般国道</span><br>
+        <div class="square" style='background-color: rgb(0, 116, 0); display: inline-block;'>
+        </div><span style="display: inline-block; margin-left: 5px;">主要地方道（都道府県道・指定市市道）</span><br>
+        <div class="square" style='background-color: rgb(116, 0, 0); display: inline-block;'>
+        </div><span style="display: inline-block; margin-left: 5px;">一般都道府県道・指定市の一般市道</span><br>
         <p>※図中の台数は
             24時間交通量<br>(全車上下計)</p>
         <div><span
-                style='background-color: rgb(203, 0, 152)'></span>主要渋滞箇所<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R3.9時点)
+                style='background-color: rgb(255, 0, 255)'></span>主要渋滞箇所<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R3.9時点)
         </div>
         <div class="square2" style='background-color: rgba(255, 0, 255, 0.1);display: inline-block;'></div>
         <span style="display: inline-block; margin-left: 5px;">人口集中地区（2020年）</span>
@@ -187,7 +193,7 @@
         <p>※上り・下りで<br>
             速度の低いほうを表示</p>
         <div><span
-                style='background-color: rgb(203, 0, 152)'></span>主要渋滞箇所<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R3.9時点)
+                style='background-color: rgb(255, 0, 255)'></span>主要渋滞箇所<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R3.9時点)
         </div>
         <div class="square2" style='background-color: rgba(255, 0, 255, 0.1);display: inline-block;'></div>
         <span style="display: inline-block; margin-left: 5px;">人口集中地区（2020年）</span>
@@ -211,7 +217,7 @@
         <p>※上り・下りで<br>
             速度の低いほうを表示</p>
         <div><span
-                style='background-color: rgb(203, 0, 152)'></span>主要渋滞箇所<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R3.9時点)
+                style='background-color: rgb(255, 0, 255)'></span>主要渋滞箇所<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R3.9時点)
         </div>
         <div class="square2" style='background-color: rgba(255, 0, 255, 0.1);display: inline-block;'></div>
         <span style="display: inline-block; margin-left: 5px;">人口集中地区（2020年）</span>
@@ -229,7 +235,7 @@
         <p>※図中の台数は<br>
             昼間12時間交通量<br>(全車上下計)</p>
         <div><span
-                style='background-color: rgb(203, 0, 152)'></span>主要渋滞箇所<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R3.9時点)
+                style='background-color: rgb(255, 0, 255)'></span>主要渋滞箇所<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R3.9時点)
         </div>
         <div class="square2" style='background-color: rgba(255, 0, 255, 0.1);display: inline-block;'></div>
         <span style="display: inline-block; margin-left: 5px;">人口集中地区（2020年）</span>
@@ -249,7 +255,7 @@
         <p>※図中の台数は<br>
             昼間12時間交通量<br>(大型車上下計)</p>
         <div><span
-                style='background-color: rgb(203, 0, 152)'></span>主要渋滞箇所<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R3.9時点)
+                style='background-color: rgb(255, 0, 255)'></span>主要渋滞箇所<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R3.9時点)
         </div>
         <div class="square2" style='background-color: rgba(255, 0, 255, 0.1);display: inline-block;'></div>
         <span style="display: inline-block; margin-left: 5px;">人口集中地区（2020年）</span>
@@ -471,7 +477,19 @@
                         80000,
                         16  // 80000 以上
                     ],
-                    'line-color': 'rgba(0, 127, 255, 1)',
+                    'line-color': [
+                        'match',
+                        ['get', '道路種別'],
+                        '1', 'rgba(0,0,255)',
+                        '2', 'rgba(0,0,119)',
+                        '3', 'rgba(255,7,7)',
+                        '4', 'rgba(0,116,0)',
+                        '5', 'rgba(0,116,0)',
+                        '6', 'rgba(116,0,0)',
+                        '7', 'rgba(116,0,0)',
+                        'rgba(0,0,0)' // default color
+                    ],
+                    // 'line-color': 'rgba(0, 127, 255, 1)',
                     // 'line-blur': 3,
                     // 'line-opacity': 0.6,
                 },
@@ -546,7 +564,19 @@
                         80000,
                         16  // 80000 以上
                     ],
-                    'line-color': 'rgba(0, 0, 203, 1)',
+                    'line-color': [
+                        'match',
+                        ['get', '道路種別'],
+                        '1', 'rgba(0,0,255)',
+                        '2', 'rgba(0,0,119)',
+                        '3', 'rgba(255,7,7)',
+                        '4', 'rgba(0,116,0)',
+                        '5', 'rgba(0,116,0)',
+                        '6', 'rgba(116,0,0)',
+                        '7', 'rgba(116,0,0)',
+                        'rgba(0,0,0)' // default color
+                    ],
+                    // 'line-color': 'rgba(0, 0, 203, 1)',
                     // 'line-blur': 3,
                     // 'line-opacity': 0.6,
                 },
@@ -607,8 +637,8 @@
                 maxzoom: 23,
                 paint: {
                     'circle-color': 'rgba(255, 255, 255, 1)',
-                    'circle-blur': 1,
-                    'circle-radius': 12
+                    // 'circle-blur': 1,
+                    'circle-radius': 7
                 }
             });
 
@@ -620,7 +650,7 @@
                 minzoom: 14,
                 maxzoom: 23,
                 paint: {
-                    'circle-color': 'rgba(203, 0, 152, 1)',
+                    'circle-color': 'rgba(255, 0, 255, 1)',
                     'circle-radius': 6
                 }
             });
@@ -1697,7 +1727,19 @@
                             80000,
                             16  // 80000 以上
                         ],
-                        'line-color': 'rgba(0, 127, 255, 1)',
+                        'line-color': [
+                            'match',
+                            ['get', '道路種別'],
+                            '1', 'rgba(0,0,255)',
+                            '2', 'rgba(0,0,119)',
+                            '3', 'rgba(255,7,7)',
+                            '4', 'rgba(0,116,0)',
+                            '5', 'rgba(0,116,0)',
+                            '6', 'rgba(116,0,0)',
+                            '7', 'rgba(116,0,0)',
+                            'rgba(0,0,0)' // default color
+                        ],
+                        // 'line-color': 'rgba(0, 127, 255, 1)',
                         // 'line-blur': 3,
                         // 'line-opacity': 0.6,
                     },
@@ -1772,7 +1814,19 @@
                             80000,
                             16  // 80000 以上
                         ],
-                        'line-color': 'rgba(0, 0, 203, 1)',
+                        'line-color': [
+                            'match',
+                            ['get', '道路種別'],
+                            '1', 'rgba(0,0,255)',
+                            '2', 'rgba(0,0,119)',
+                            '3', 'rgba(255,7,7)',
+                            '4', 'rgba(0,116,0)',
+                            '5', 'rgba(0,116,0)',
+                            '6', 'rgba(116,0,0)',
+                            '7', 'rgba(116,0,0)',
+                            'rgba(0,0,0)' // default color
+                        ],
+                        // 'line-color': 'rgba(0, 0, 203, 1)',
                         // 'line-blur': 3,
                         // 'line-opacity': 0.6,
                     },
@@ -1827,8 +1881,8 @@
                 maxzoom: 23,
                 paint: {
                     'circle-color': 'rgba(255, 255, 255, 1)',
-                    'circle-blur': 1,
-                    'circle-radius': 12
+                    // 'circle-blur': 1,
+                    'circle-radius': 7
                 }
             });
 
@@ -1840,7 +1894,7 @@
                 minzoom: 14,
                 maxzoom: 23,
                 paint: {
-                    'circle-color': 'rgba(203, 0, 152, 1)',
+                    'circle-color': 'rgba(255, 0, 255, 1)',
                     'circle-radius': 6
                 }
             });
@@ -1866,7 +1920,6 @@
                 }
             });
 
-
             // 凡例の表示切り替え
             var layerIds = ["24jikankotsuryo", "konzatsuji", "hikonzatsuji", "konzatsudo", "ogatashakonnyuritsu"];
             for (var j = 0; j < layerIds.length; j++) {
@@ -1879,7 +1932,6 @@
                     document.querySelector('#legend-' + layerIds[j]).style.display = 'none';
                 }
             }
-
         }
 
         /*
