@@ -5,7 +5,7 @@ https://shi-works.github.io/road-traffic-census-map-2021/
 ## Data Source
 ### 全国道路・街路交通情勢調査（道路交通センサス）
 - 令和3年度全国道路・街路交通情勢調査 一般交通量調査結果  
-箇所別基本表 https://www.mlit.go.jp/road/census/r3/index.html
+箇所別基本表 https://www.mlit.go.jp/road/census/r3/index.html  
 可視化ツール https://www.mlit.go.jp/road/ir/ir-data/census_visualizationR3/index.html
 
 ## Created Data
