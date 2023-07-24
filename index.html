@@ -2013,6 +2013,7 @@
             var dorojokyochosatanikukambango = e.features[0].properties['道路状況／調査単位区間番号'];
             var shasensu = e.features[0].properties['車線数'];
             var daihyoendojokyo = e.features[0].properties['代表沿道状況'];
+            var kotsuryotodofukenshiteishikodo = e.features[0].properties['交通量／都道府県指定市コード'];
             var kotsuryochosatanikukambango = e.features[0].properties['交通量／調査単位区間番号'];
             // var kotsuryokansokuhikansokunobetsu = e.features[0].properties['平成27年度調査交通量観測・非観測の別'];
             // var kobetsuchosakansokuchikatsuyonobetsu = e.features[0].properties['個別調査観測値活用の別'];
@@ -2106,7 +2107,7 @@
                     '<td>' + '代表沿道状況' + '</td> ' + '<td>' + daihyoendojokyo + '</td> ' +
                     '</tr>' +
                     '<tr>' +
-                    '<td>' + '交通量調査単位区間番号' + '</td> ' + '<td>' + kotsuryochosatanikukambango + '</td> ' +
+                    '<td>' + '交通量調査単位区間番号' + '</td> ' + '<td>' + kotsuryotodofukenshiteishikodo + '-' + kotsuryochosatanikukambango + '</td> ' +
                     '</tr>' +
                     '<tr>' +
                     '<td>' + '上り／令和３年度調査交通量観測・非観測の別' + '</td> ' + '<td>' + inbound_kotsuryokansokuhikansokunobetsu + '</td> ' +
@@ -2223,6 +2224,7 @@
             var dorojokyochosatanikukambango = e.features[0].properties['道路状況／調査単位区間番号'];
             var shasensu = e.features[0].properties['車線数'];
             var daihyoendojokyo = e.features[0].properties['代表沿道状況'];
+            var kotsuryotodofukenshiteishikodo = e.features[0].properties['交通量／都道府県指定市コード'];
             var kotsuryochosatanikukambango = e.features[0].properties['交通量／調査単位区間番号'];
             // var kotsuryokansokuhikansokunobetsu = e.features[0].properties['平成27年度調査交通量観測・非観測の別'];
             // var kobetsuchosakansokuchikatsuyonobetsu = e.features[0].properties['個別調査観測値活用の別'];
@@ -2316,7 +2318,7 @@
                     '<td>' + '代表沿道状況' + '</td> ' + '<td>' + daihyoendojokyo + '</td> ' +
                     '</tr>' +
                     '<tr>' +
-                    '<td>' + '交通量調査単位区間番号' + '</td> ' + '<td>' + kotsuryochosatanikukambango + '</td> ' +
+                    '<td>' + '交通量調査単位区間番号' + '</td> ' + '<td>' + kotsuryotodofukenshiteishikodo + '-' + kotsuryochosatanikukambango + '</td> ' +
                     '</tr>' +
                     '<tr>' +
                     '<td>' + '上り／令和３年度調査交通量観測・非観測の別' + '</td> ' + '<td>' + inbound_kotsuryokansokuhikansokunobetsu + '</td> ' +
