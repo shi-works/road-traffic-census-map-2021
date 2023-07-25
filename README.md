@@ -12,6 +12,6 @@ https://shi-works.github.io/road-traffic-census-map-2021/
 - 上記の可視化ツールからGISデータ（GeoJSON）を取得。
 - GeoJOSNの属性「census（箇所別基本表の交通調査基本区間番号）」をキーにして、箇所別基本表を紐づけて作成
 ### PMTiles形式
-`https://xs489works.xsrv.jp/pmtiles-data/traffic-census/traffic_census_2021_convert.pmtiles`,725MB
+`https://xs489works.xsrv.jp/pmtiles-data/traffic-census/traffic_census_2021_convert.pmtiles`,719MB
 ### GeoParquet形式
-`https://xs489works.xsrv.jp/pmtiles-data/traffic-census/traffic_census_2021_convert.parquet`,98MB
+`https://xs489works.xsrv.jp/pmtiles-data/traffic-census/traffic_census_2021_convert.parquet`,97MB
