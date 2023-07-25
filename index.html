@@ -2010,6 +2010,7 @@
             var rosemmei = e.features[0].properties['路線名'];
             var kanrikubun = e.features[0].properties['管理区分'];
             var kukanencho = e.features[0].properties['区間延長（ｋｍ）'];
+            var dorojokyotodofukenshiteishikodo = e.features[0].properties['道路状況／都道府県指定市コード'];
             var dorojokyochosatanikukambango = e.features[0].properties['道路状況／調査単位区間番号'];
             var shasensu = e.features[0].properties['車線数'];
             var daihyoendojokyo = e.features[0].properties['代表沿道状況'];
@@ -2064,6 +2065,7 @@
             var formatted_jikankotsuryo_zensha = Number(jikankotsuryo_zensha).toLocaleString();
             var hiruma_12jikan_ogatashakonnyuritsu = e.features[0].properties['昼間１２時間大型車混入率（％）'];
             var konzatsudo = e.features[0].properties['混雑度'];
+            var ryokosokudotodofukenshiteishikodo = e.features[0].properties['旅行速度／都道府県指定市コード'];
             var ryokosokudochosatanikukambango = e.features[0].properties['旅行速度／調査単位区間番号'];
             var konzatsujiryokosokudo_up = e.features[0].properties['朝夕（混雑時）／上り／旅行速度／合計（ｋｍ／ｈ）'];
             var konzatsujiryokosokudo_down = e.features[0].properties['朝夕（混雑時）／下り／旅行速度／合計（ｋｍ／ｈ）'];
@@ -2098,7 +2100,7 @@
                     '<td>' + '区間延長(km)' + '</td> ' + '<td>' + kukanencho + '</td> ' +
                     '</tr>' +
                     '<tr>' +
-                    '<td>' + '道路状況調査単位区間番号' + '</td> ' + '<td>' + dorojokyochosatanikukambango + '</td> ' +
+                    '<td>' + '道路状況調査単位区間番号' + '</td> ' + '<td>' + dorojokyotodofukenshiteishikodo + '-' + dorojokyochosatanikukambango + '</td> ' +
                     '</tr>' +
                     '<tr>' +
                     '<td>' + '車線数' + '</td> ' + '<td>' + shasensu + '</td> ' +
@@ -2188,7 +2190,7 @@
                     '<td>' + '混雑度' + '</td> ' + '<td>' + konzatsudo + '</td> ' +
                     '</tr>' +
                     '<tr>' +
-                    '<td>' + '旅行速度調査単位区間番号' + '</td> ' + '<td>' + ryokosokudochosatanikukambango + '</td> ' +
+                    '<td>' + '旅行速度調査単位区間番号' + '</td> ' + '<td>' + ryokosokudotodofukenshiteishikodo + '-' + ryokosokudochosatanikukambango + '</td> ' +
                     '</tr>' +
                     '<tr>' +
                     '<td>' + '上り／混雑時旅行速度' + '</td> ' + '<td>' + konzatsujiryokosokudo_up + 'km/h' + '</td> ' +
@@ -2221,6 +2223,7 @@
             var rosemmei = e.features[0].properties['路線名'];
             var kanrikubun = e.features[0].properties['管理区分'];
             var kukanencho = e.features[0].properties['区間延長（ｋｍ）'];
+            var dorojokyotodofukenshiteishikodo = e.features[0].properties['道路状況／都道府県指定市コード'];
             var dorojokyochosatanikukambango = e.features[0].properties['道路状況／調査単位区間番号'];
             var shasensu = e.features[0].properties['車線数'];
             var daihyoendojokyo = e.features[0].properties['代表沿道状況'];
@@ -2275,6 +2278,7 @@
             var formatted_jikankotsuryo_zensha = Number(jikankotsuryo_zensha).toLocaleString();
             var hiruma_12jikan_ogatashakonnyuritsu = e.features[0].properties['昼間１２時間大型車混入率（％）'];
             var konzatsudo = e.features[0].properties['混雑度'];
+            var ryokosokudotodofukenshiteishikodo = e.features[0].properties['旅行速度／都道府県指定市コード'];
             var ryokosokudochosatanikukambango = e.features[0].properties['旅行速度／調査単位区間番号'];
             var konzatsujiryokosokudo_up = e.features[0].properties['朝夕（混雑時）／上り／旅行速度／合計（ｋｍ／ｈ）'];
             var konzatsujiryokosokudo_down = e.features[0].properties['朝夕（混雑時）／下り／旅行速度／合計（ｋｍ／ｈ）'];
@@ -2309,7 +2313,7 @@
                     '<td>' + '区間延長(km)' + '</td> ' + '<td>' + kukanencho + '</td> ' +
                     '</tr>' +
                     '<tr>' +
-                    '<td>' + '道路状況調査単位区間番号' + '</td> ' + '<td>' + dorojokyochosatanikukambango + '</td> ' +
+                    '<td>' + '道路状況調査単位区間番号' + '</td> ' + '<td>' + dorojokyotodofukenshiteishikodo + '-' + dorojokyochosatanikukambango + '</td> ' +
                     '</tr>' +
                     '<tr>' +
                     '<td>' + '車線数' + '</td> ' + '<td>' + shasensu + '</td> ' +
@@ -2399,7 +2403,7 @@
                     '<td>' + '混雑度' + '</td> ' + '<td>' + konzatsudo + '</td> ' +
                     '</tr>' +
                     '<tr>' +
-                    '<td>' + '旅行速度調査単位区間番号' + '</td> ' + '<td>' + ryokosokudochosatanikukambango + '</td> ' +
+                    '<td>' + '旅行速度調査単位区間番号' + '</td> ' + '<td>' + ryokosokudotodofukenshiteishikodo + '-' + ryokosokudochosatanikukambango + '</td> ' +
                     '</tr>' +
                     '<tr>' +
                     '<td>' + '上り／混雑時旅行速度' + '</td> ' + '<td>' + konzatsujiryokosokudo_up + 'km/h' + '</td> ' +
