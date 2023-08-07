@@ -2,6 +2,8 @@
 ## Public Website
 https://shi-works.github.io/road-traffic-census-map-2021/
 
+![image](https://github.com/shi-works/road-traffic-census-map-2021/assets/71203808/ecd1029a-93e5-42e9-ad34-327d63562cfa)
+
 ## Data Source
 ### 全国道路・街路交通情勢調査（道路交通センサス）
 - 令和3年度全国道路・街路交通情勢調査 一般交通量調査結果  
