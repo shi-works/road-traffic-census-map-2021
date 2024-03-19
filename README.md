@@ -21,7 +21,7 @@ https://shi-works.github.io/road-traffic-census-map-2021/
 ## 道路交通センサスマップ2015
 https://github.com/shi-works/road-traffic-census-map-2015
 
-##GIS Dataのライセンスについて
+## GIS Dataのライセンスについて
 本データセットは[CC-BY-4.0](https://pmtiles-data.s3.ap-northeast-1.amazonaws.com/traffic-accident/LICENSE)で提供されます。使用の際には本リポジトリへのリンクを提示してください。
 また、本データセットは令和3年度全国道路・街路交通情勢調査（道路交通センサス）の箇所別基本表及び可視化ツールのGISデータを加工して作成したものです。本データセットの使用・加工にあたっては、[国土交通省Webサイトのリンク・著作権・免責事項](https://www.mlit.go.jp/link.html)を必ずご確認ください。
 
